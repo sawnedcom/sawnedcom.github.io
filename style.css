@@ -133,8 +133,51 @@ h4 {
   background-color: #e94560;
 }
 
-@media screen and (max-width: 845px) {
-  .slide {
-    margin-bottom: 20px;
+::placeholder {
+  font-size: 20px;
+}
+
+.input-red {
+  color: red;
+}
+
+.boo {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* form control buatan saya (di samping tombol github) */
+.form-me {
+  background-color: transparent;
+  border: 1px solid var(--body);
+  color: var(--bs-dark-text);
+  border-radius: 5px;
+}
+
+.cari {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  input[type='text'] {
+    width: 230px;
+  }
+
+  .form-me {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  .cari {
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
   }
 }
