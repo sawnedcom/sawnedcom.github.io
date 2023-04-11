@@ -1,0 +1,171 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #37306b;
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+/* navbar */
+
+nav {
+  background-color: #37306b;
+}
+
+.nav-link.active {
+  color: white;
+  border-bottom: 1px solid #fff;
+  transform: translateX(10%);
+  transition: 1s;
+}
+
+.nav-link {
+  color: white !important;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+}
+.navbar {
+  box-shadow: var(--box-shadow);
+}
+nav li {
+  border: none;
+  display: inline-block;
+  padding-right: 5px;
+  transition: all linear 0.5s;
+  margin-right: 20px;
+  font-size: 18px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-right: 5px;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+li.active::after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%;
+  background-color: #ff105e;
+  left: 0;
+  bottom: -7px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  animation: appear 0.2s linear;
+}
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  li.active::after {
+    width: 30%;
+  }
+}
+
+.dropdown-menu {
+  background-color: #212529;
+  color: white;
+}
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover {
+  background-color: transparent;
+  color: white;
+}
+
+/* hero */
+
+.fade-down {
+  opacity: 0;
+  animation-name: fadedown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadedown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.br-display {
+  display: none;
+}
+
+.margin-mobile {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 380px) {
+  .br-display {
+    display: block;
+  }
+  .margin-mobile {
+    margin-top: 20px;
+  }
+}
+
+.website {
+  margin-top: 300px;
+  margin-bottom: 200px;
+}
+
+.text-kecil {
+  font-size: 20px;
+}
+
+
+
+
+.btn {
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 767px) {
+  .text-kecil {
+    font-size: 18px;
+  }
+}
+
+.fade-right {
+  opacity: 0; /* Atur opasitas menjadi 0 */
+  transform: translateX(-50px); /* Geser elemen ke kanan sejauh 50px */
+  animation: fadeRight 1s ease forwards; /* Terapkan animasi */
+}
+
+@keyframes fadeRight {
+  to {
+    opacity: 1; /* Pada akhir animasi, opasitas akan menjadi 1 */
+    transform: translateX(0); /* Pada akhir animasi, elemen akan kembali ke posisi awalnya */
+  }
+}
+
