@@ -1,0 +1,1 @@
+routes is for everyting in navbar section

@@ -1,0 +1,84 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+.pop-reg {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pop-med {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* font end */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1f2544;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-brand {
+  font-size: 25px;
+  font-weight: 500;
+}
+nav li {
+  border: none;
+  display: inline-block;
+  padding-right: 5px;
+  transition: all linear 0.5s;
+  margin-right: 20px;
+  font-size: 18px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-right: 5px;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #474f7a 50%, #81689d 50%);
+  background-size: 200% 100%;
+  color: white;
+  border: none;
+  transition: background-position 0.8s, transform 0.8s;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-position: -100% 0;
+  transform: scale(1.1);
+}
+
+.warna-ku {
+  color: #ff6961;
+}
+
+.gambar {
+  width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+  .gambar {
+    width: 50%;
+  }
+}
